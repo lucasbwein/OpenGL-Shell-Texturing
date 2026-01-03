@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build",
+  "command": "/usr/bin/cc  -I/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/external/glad/include  -arch arm64 -o CMakeFiles/glad.dir/external/glad/src/glad.c.o -c /Users/lucasweinstein/Projects/Personal/OpenGl_Shell/external/glad/src/glad.c",
+  "file": "/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/external/glad/src/glad.c",
+  "output": "CMakeFiles/glad.dir/external/glad/src/glad.c.o"
+},
+{
+  "directory": "/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build",
+  "command": "/usr/bin/c++  -I/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/external/include -I/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/external/glad/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/OpenGlShell.dir/src/main.cpp.o -c /Users/lucasweinstein/Projects/Personal/OpenGl_Shell/src/main.cpp",
+  "file": "/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/src/main.cpp",
+  "output": "CMakeFiles/OpenGlShell.dir/src/main.cpp.o"
+}
+]
