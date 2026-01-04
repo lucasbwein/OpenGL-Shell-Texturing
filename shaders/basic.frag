@@ -64,6 +64,11 @@ vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir);
 vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 
+float rand(vec2 p)
+{
+    return fract(sin(dot(p, vec2(37.7, 17.7))) * 43758.5453);
+}
+
 void main()
 {
     // Basic properties for lighting
@@ -79,7 +84,7 @@ void main()
     vec2 cell = floor(uv);
 
     // hash like function for shell texturing
-    float height = fract(sin(dot(cell, vec2(37.7, 17.7))) * 43758.5453);
+    float height = rand(cell);
 
     // Lambertian diffuse => diffuse = max(dot(N, dirToLight), 0)
     vec3 lightDir = normalize(-dirLight.direction);

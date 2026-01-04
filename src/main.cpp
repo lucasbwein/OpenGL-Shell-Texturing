@@ -19,10 +19,11 @@
 #include <string>
 
 
-/* 
+/* ----------
 To build use:
-cmake --build . && ./OpenGlShell
-*/
+- cd build
+- cmake --build . && ./OpenGlShell
+---------- */
 
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 Camera debugCam;
