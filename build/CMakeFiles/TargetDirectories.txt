@@ -1,4 +1,0 @@
-/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build/CMakeFiles/glad.dir
-/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build/CMakeFiles/OpenGlShell.dir
-/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build/CMakeFiles/edit_cache.dir
-/Users/lucasweinstein/Projects/Personal/OpenGl_Shell/build/CMakeFiles/rebuild_cache.dir
