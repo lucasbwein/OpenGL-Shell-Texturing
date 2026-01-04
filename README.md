@@ -29,7 +29,7 @@ Shell texturing is a technique used to render seamingly complex objects
 - **Dynamic Physics Simulation**: Real-time gravity and wind forces that respond to camera movement
 - **Adaptive Shading**: Edge-based alpha blending for smooth silhouettes and natural-looking fur boundaries
 - **Interactive Controls**: Real-time adjustment of fur parameters for experimentation and tuning
-- **Performance Optimized**: Instanced rendering allows 128+ layers at 100 FPS
+- **Performance Optimized**: Instanced rendering allows 80+ layers at 110 FPS
 
 ## Technical Implementation
 
@@ -51,8 +51,9 @@ Each shell uses a grid-based hash function to determine fur strand positions and
 ```glsl
 // Fragment shader: Generate procedural fur pattern
 vec2 cell = floor(texCoord * gridFrequency);
-float strandHeight = rand(cell);  // generates noise
+float height = rand(cell);  // generates noise
 float distFromCenter = length(fract(texCoord * gridFrequency) * 2.0 - 1.0);
+(height < layer) discard;
 ```
 
 ### Edge-Based Alpha Blending
