@@ -1,15 +1,3 @@
-# Project Description
-
-This project, done in OpenGL, is an experiment to demonstrates the use of shell texturing for fur rendering combined with basic physics simulation.
-
-The scene 
-
-# Technologies
-- C++
-- OpenGL
-- GLFW
-- GLM
-
 # Shell Texturing Fur Rendering
 
 A real-time fur rendering implementation using the shell texturing technique in OpenGL. This project demonstrates volumetric rendering, procedural noise patterns, and dynamic physics simulation for realistic fur effects.
@@ -71,7 +59,7 @@ float alpha = edgeFade * (1.0 - layerFade);
 ### Prerequisites
 
 - CMake 3.10+
-- C++17 compatible compiler
+- C++ compatible compiler
 - OpenGL 3.3+ support
 - GLFW3
 - GLM
