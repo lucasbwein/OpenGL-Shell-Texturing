@@ -9,7 +9,7 @@ A real-time fur rendering implementation using the shell texturing technique in 
 
 Shell texturing is a technique for rendering fur, grass, and other fine geometric details by rendering multiple transparent layers (shells) offset along surface normals. Each shell contains a procedural pattern that creates the appearance of individual strands, and when layered together, produces a convincing volumetric fur effect.
 
-Shell texturing is a technique used to render seamingly complex objects
+Shell texturing is a technique used to render seemingly complex objects
 
 ### Key Features
 
@@ -235,17 +235,28 @@ shell-texturing/
 ## Development Context
 
 This project was developed as part of graphics programming learning.
-The implementation demonstrates:
+The project covers:
 
 - **Real-time rendering techniques** for volumetric effects
 - **Shader programming** with GLSL for procedural generation
 - **Performance optimization** through instanced rendering
 - **Physics simulation** for dynamic visual effects
 
+## What I Learned
+
+Getting the procedural noise pattern right took way longer than expected. 
+I kept getting uniform fur instead of individual strands until I realized 
+I was hashing the wrong coordinates. The quadratic scaling for physics 
+(layer²) was an "aha!" moment - linear scaling looked way too stiff.
+
+The edge-based alpha blending was tricky to tune. Too aggressive and the 
+fur disappeared at shallow angles; too subtle and you get hard edges. 
+The smoothstep(0.0, 0.4, viewDot) values came from lots of trial and error.
+
 ## Author
 
-**Lucas** - Computer Science @ San Diego State University
-- Focus: Real-time rendering, shell texturing, shader programming, and tools development
+**Lucas Weinstein** - Computer Science @ San Diego State University
+- Focus: Graphics Programming
 
 ## Acknowledgments
 
@@ -253,6 +264,4 @@ The implementation demonstrates:
 - LearnOpenGL.com for foundational graphics programming education
 - The OpenGL community for documentation and support
 
----
-
-*Last Updated: January 2026*
+**github.com/lucasbwein | linkedin.com/in/lucasweinstein**  
